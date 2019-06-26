@@ -17,7 +17,9 @@ Public Class Form1
         ops.Save()
     End Sub
 
-    Private Sub LoadTextBoxesButton_Click(sender As Object, e As EventArgs) Handles LoadTextBoxesButton.Click
+    Private Sub LoadTextBoxesButton_Click(sender As Object, e As EventArgs) _
+        Handles LoadTextBoxesButton.Click
+
         Dim ops = New ControlOperations(FileName)
         If ops.Load() Then
             For Each data As ControlInformation In ops.List
