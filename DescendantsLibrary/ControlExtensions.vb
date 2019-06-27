@@ -23,9 +23,34 @@ Public Module ControlExtensions
                 Next
             End If
         Next
+
     End Function
     <Runtime.CompilerServices.Extension>
     Public Function TextBoxList(pControl As Control) As List(Of TextBox)
         Return pControl.Descendants(Of TextBox)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function CheckBoxList(pControl As Control) As List(Of CheckBox)
+        Return pControl.Descendants(Of CheckBox)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function ComboBoxList(pControl As Control) As List(Of ComboBox)
+        Return pControl.Descendants(Of ComboBox)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function PictureBoxList(pControl As Control) As List(Of PictureBox)
+        Return pControl.Descendants(Of PictureBox)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function PanelList(pControl As Control) As List(Of Panel)
+        Return pControl.Descendants(Of Panel)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function RadioButtonList(pControl As Control) As List(Of RadioButton)
+        Return pControl.Descendants(Of RadioButton)().ToList()
+    End Function
+    <Runtime.CompilerServices.Extension>
+    Public Function NumericUpDownList(pControl As Control) As List(Of NumericUpDown)
+        Return pControl.Descendants(Of NumericUpDown)().ToList()
     End Function
 End Module

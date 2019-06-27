@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ExceptionHandling\BaseExceptionProperties.vb" />
     <Compile Include="ControlInformation.vb" />
     <Compile Include="ControlOperations.vb" />
     <Compile Include="Form1.vb">

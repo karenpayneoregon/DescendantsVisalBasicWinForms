@@ -3,6 +3,7 @@
 ''' </summary>
 <Serializable()>
 Public Class ControlInformation
+    Public Property Id() As Integer
     Public Property Name() As String
     Public Property Text As String
 

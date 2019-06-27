@@ -23,27 +23,35 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.MiddleNameTextBox = New System.Windows.Forms.TextBox()
         Me.LastTextBox = New System.Windows.Forms.TextBox()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
-        Me.GetTextBoxesButton = New System.Windows.Forms.Button()
-        Me.LoadTextBoxesButton = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.MiddleNameTextBox)
         Me.GroupBox1.Controls.Add(Me.LastTextBox)
         Me.GroupBox1.Controls.Add(Me.FirstNameTextBox)
         Me.GroupBox1.Location = New System.Drawing.Point(27, 26)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(134, 90)
+        Me.GroupBox1.Size = New System.Drawing.Size(134, 137)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'MiddleNameTextBox
+        '
+        Me.MiddleNameTextBox.Location = New System.Drawing.Point(11, 46)
+        Me.MiddleNameTextBox.Name = "MiddleNameTextBox"
+        Me.MiddleNameTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.MiddleNameTextBox.TabIndex = 2
+        Me.MiddleNameTextBox.Text = "Anne"
+        '
         'LastTextBox
         '
-        Me.LastTextBox.Location = New System.Drawing.Point(14, 52)
+        Me.LastTextBox.Location = New System.Drawing.Point(11, 75)
         Me.LastTextBox.Name = "LastTextBox"
         Me.LastTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LastTextBox.TabIndex = 1
@@ -57,31 +65,11 @@ Partial Class Form1
         Me.FirstNameTextBox.TabIndex = 0
         Me.FirstNameTextBox.Text = "Karen"
         '
-        'GetTextBoxesButton
-        '
-        Me.GetTextBoxesButton.Location = New System.Drawing.Point(27, 122)
-        Me.GetTextBoxesButton.Name = "GetTextBoxesButton"
-        Me.GetTextBoxesButton.Size = New System.Drawing.Size(225, 23)
-        Me.GetTextBoxesButton.TabIndex = 2
-        Me.GetTextBoxesButton.Text = "Get Textboxes in GroupBox"
-        Me.GetTextBoxesButton.UseVisualStyleBackColor = True
-        '
-        'LoadTextBoxesButton
-        '
-        Me.LoadTextBoxesButton.Location = New System.Drawing.Point(27, 151)
-        Me.LoadTextBoxesButton.Name = "LoadTextBoxesButton"
-        Me.LoadTextBoxesButton.Size = New System.Drawing.Size(225, 23)
-        Me.LoadTextBoxesButton.TabIndex = 3
-        Me.LoadTextBoxesButton.Text = "Load TextBoxes"
-        Me.LoadTextBoxesButton.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(299, 252)
-        Me.Controls.Add(Me.LoadTextBoxesButton)
-        Me.Controls.Add(Me.GetTextBoxesButton)
+        Me.ClientSize = New System.Drawing.Size(187, 211)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form1"
@@ -96,6 +84,5 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents LastTextBox As TextBox
     Friend WithEvents FirstNameTextBox As TextBox
-    Friend WithEvents GetTextBoxesButton As Button
-    Friend WithEvents LoadTextBoxesButton As Button
+    Friend WithEvents MiddleNameTextBox As TextBox
 End Class
