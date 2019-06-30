@@ -28,5 +28,7 @@ Public Class Form1
 
         MessageBox.Show(orderedByNameOnFormCanvas)
 
+        Dim result = RadioButtonChecked
+
     End Sub
 End Class

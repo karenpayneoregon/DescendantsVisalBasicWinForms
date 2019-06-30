@@ -8,7 +8,6 @@ Public Class Form1
                 Path.Combine(
                     AppDomain.CurrentDomain.BaseDirectory, "controlData.dat")
 
-
     Private Sub Form1_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         Dim ops = New ControlOperations(FileName)
         If ops.FileExists() Then

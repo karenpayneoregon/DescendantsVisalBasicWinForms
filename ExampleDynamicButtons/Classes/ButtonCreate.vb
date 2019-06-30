@@ -3,11 +3,6 @@
 Namespace Classes
     Public Class ButtonCreate
         ''' <summary>
-        ''' List of buttons and ordinal index created
-        ''' </summary>
-        ''' <returns></returns>
-        Public Property Items() As Dictionary(Of Integer, Button)
-        ''' <summary>
         ''' Parent control where button controls will be placed
         ''' </summary>
         Public Property ParentControl() As Control
@@ -17,14 +12,11 @@ Namespace Classes
         Protected ButtonWidth As Integer = 150
         Private _indexer As Integer = 0
 
-        Public Sub New()
-            Items = New Dictionary(Of Integer, Button)()
-        End Sub
         ''' <summary>
         ''' Create a single button with caption and setup an action to open a file
         ''' </summary>
         ''' <param name="pCaption">Text to show</param>
-        ''' <param name="pFileName">Existing file to opem</param>
+        ''' <param name="pFileName">Existing file to open</param>
         Public Sub CreateSingleButton(pCaption As String, pFileName As String)
 
             _indexer += 1
@@ -49,7 +41,6 @@ Namespace Classes
                                 End Sub
 
             ParentControl.Controls.Add(b)
-            Items.Add(_indexer, b)
             BaseHeight += 30
 
         End Sub
