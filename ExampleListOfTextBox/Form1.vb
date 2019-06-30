@@ -1,6 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.IO
 Imports DescendantsLibrary
+Imports ExampleListOfTextBox.Classes
 
 Public Class Form1
     Private FileName As String =

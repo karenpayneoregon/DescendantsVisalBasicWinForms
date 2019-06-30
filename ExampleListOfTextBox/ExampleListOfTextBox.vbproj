@@ -77,8 +77,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ExceptionHandling\BaseExceptionProperties.vb" />
-    <Compile Include="ControlInformation.vb" />
-    <Compile Include="ControlOperations.vb" />
+    <Compile Include="Classes\ControlInformation.vb" />
+    <Compile Include="Classes\ControlOperations.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
