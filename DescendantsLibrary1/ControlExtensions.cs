@@ -9,34 +9,6 @@ namespace DescendantsLibrary
 {
     public static class ControlExtensions
     {
-        public static List<TextBox> TextBoxList(this Control pControl)
-        {
-            return pControl.Descendants<TextBox>().ToList();
-        }
-        public static List<CheckBox> CheckBoxList(this Control pControl)
-        {
-            return pControl.Descendants<CheckBox>().ToList();
-        }
-        public static List<ComboBox> ComboBoxList(this Control pControl)
-        {
-            return pControl.Descendants<ComboBox>().ToList();
-        }
-        public static List<PictureBox> PictureBoxList(this Control pControl)
-        {
-            return pControl.Descendants<PictureBox>().ToList();
-        }
-        public static List<Panel> PanelList(this Control pControl)
-        {
-            return pControl.Descendants<Panel>().ToList();
-        }
-        public static List<RadioButton> RadioButtonList(this Control pControl)
-        {
-            return pControl.Descendants<RadioButton>().ToList();
-        }
-        public static List<NumericUpDown> NumericUpDownList(this Control pControl)
-        {
-            return pControl.Descendants<NumericUpDown>().ToList();
-        }
         /// <summary>
         /// Get a collection of a specific type of control from a control or form.
         /// </summary>
@@ -62,5 +34,23 @@ namespace DescendantsLibrary
                 }
             }
         }
+        public static List<TextBox> TextBoxList(this Control pControl) => pControl.Descendants<TextBox>().ToList();
+        public static List<Label> LabelList(this Control pControl) => pControl.Descendants<Label>().ToList();
+        public static List<DataGridView> DataGridViewList(this Control pControl) => pControl.Descendants<DataGridView>().ToList();
+        public static List<ListView> ListViewViewList(this Control pControl) => pControl.Descendants<ListView>().ToList();
+        public static List<CheckBox> CheckBoxList(this Control pControl) => pControl.Descendants<CheckBox>().ToList();
+        public static List<ComboBox> ComboBoxList(this Control pControl) => pControl.Descendants<ComboBox>().ToList();
+        public static List<ListBox> ListBoxList(this Control pControl) => pControl.Descendants<ListBox>().ToList();
+        public static List<DateTimePicker> DateTimePickerList(this Control pControl) => pControl.Descendants<DateTimePicker>().ToList();
+        public static List<PictureBox> PictureBoxList(this Control pControl) => pControl.Descendants<PictureBox>().ToList();
+        public static List<Panel> PanelList(this Control pControl) => pControl.Descendants<Panel>().ToList();
+        public static List<GroupBox> GroupBoxList(this Control pControl) => pControl.Descendants<GroupBox>().ToList();
+        public static List<Button> ButtonList(this Control pControl) => pControl.Descendants<Button>().ToList();
+        public static List<RadioButton> RadioButtonList(this Control pControl) => pControl.Descendants<RadioButton>().ToList();
+        public static List<NumericUpDown> NumericUpDownList(this Control pControl) => pControl.Descendants<NumericUpDown>().ToList();
+        public static RadioButton RadioButtonChecked(this Control pControl, bool pChecked = true) => 
+            pControl.Descendants<RadioButton>().ToList()
+                .FirstOrDefault((radioButton) => radioButton.Checked == pChecked);
+        public static string[] ControlNames(this IEnumerable<Control> pControls) => pControls.Select((control) => control.Name).ToArray();
     }
 }

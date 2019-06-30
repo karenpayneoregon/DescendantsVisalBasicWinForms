@@ -24,6 +24,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
         Dim TextBoxList = GroupBox1.TextBoxList.OrderBy(Function(box) box.TabIndex)
         Dim ops = New ControlOperations(FileName)
 
@@ -34,5 +35,6 @@ Public Class Form1
         If Not ops.Save() Then
             MessageBox.Show($"Failed to load: {ops.LastExceptionMessage}")
         End If
+
     End Sub
 End Class

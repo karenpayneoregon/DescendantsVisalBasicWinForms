@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89EA5D77-F7DA-48F5-A254-6B06DF79E251}</ProjectGuid>
+    <ProjectGuid>{42B6606D-2A8A-4CBD-BDE4-21C4C3EC631C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ExampleListOfTextBox.My.MyApplication</StartupObject>
-    <RootNamespace>ExampleListOfTextBox</RootNamespace>
-    <AssemblyName>ExampleListOfTextBox</AssemblyName>
+    <StartupObject>ExampleDynamicButtons.My.MyApplication</StartupObject>
+    <RootNamespace>ExampleDynamicButtons</RootNamespace>
+    <AssemblyName>ExampleDynamicButtons</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ExampleListOfTextBox.xml</DocumentationFile>
+    <DocumentationFile>ExampleDynamicButtons.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ExampleListOfTextBox.xml</DocumentationFile>
+    <DocumentationFile>ExampleDynamicButtons.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -48,9 +48,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ControlLibrary">
-      <HintPath>..\ControlLibrary\obj\Debug\ControlLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -76,9 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\ExceptionHandling\BaseExceptionProperties.vb" />
-    <Compile Include="ControlInformation.vb" />
-    <Compile Include="ControlOperations.vb" />
+    <Compile Include="ButtonCreate.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +124,10 @@
     <ProjectReference Include="..\DescendantsLibrary\DescendantsLibrary.vbproj">
       <Project>{ad9fe332-d50e-4082-ac78-9600ad8954ba}</Project>
       <Name>DescendantsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LanguageExtensions\LanguageExtensions.vbproj">
+      <Project>{cf23f216-166a-41b7-b9c7-507bc009a470}</Project>
+      <Name>LanguageExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
