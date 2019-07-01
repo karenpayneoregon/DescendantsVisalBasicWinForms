@@ -141,4 +141,13 @@ Public Module ControlExtensions
     Public Function ControlNames(pControls As IEnumerable(Of Control)) As String()
         Return pControls.Select(Function(c) c.Name).ToArray()
     End Function
+    ''' <summary>
+    ''' Is control a container
+    ''' </summary>
+    ''' <param name="pControl"></param>
+    ''' <returns></returns>
+    <Runtime.CompilerServices.Extension>
+    Public Function IsContainer(pControl As Control) As Boolean
+        Return pControl.HasChildren
+    End Function
 End Module
