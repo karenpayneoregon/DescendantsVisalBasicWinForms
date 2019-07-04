@@ -24,7 +24,9 @@ Public Class Form1
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Sub SelectedCheckBoxesButton_Click(sender As Object, e As EventArgs) Handles SelectedCheckBoxesButton.Click
+    Private Sub SelectedCheckBoxesButton_Click(sender As Object, e As EventArgs) _
+        Handles SelectedCheckBoxesButton.Click
+
         ListBox1.DataSource = FlowLayoutPanel1.
             CheckBoxList.Where(Function(cb) cb.Checked).
             Select(Function(checkBox) checkBox.Text).
