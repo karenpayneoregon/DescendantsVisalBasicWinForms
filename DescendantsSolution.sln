@@ -28,6 +28,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ParentTrailLibrary", "Paren
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExampleDifferentContainers", "ExampleDifferentContainers\ExampleDifferentContainers.vbproj", "{89DCEF51-6ABD-4A4D-9503-0BF09D912CEA}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExampleRadioButtons", "ExampleRadioButtons\ExampleRadioButtons.vbproj", "{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExampleCheckBoxes", "ExampleCheckBoxes\ExampleCheckBoxes.vbproj", "{D9A15A09-4B2B-4279-9F4A-6F9FA8571752}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +70,14 @@ Global
 		{89DCEF51-6ABD-4A4D-9503-0BF09D912CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89DCEF51-6ABD-4A4D-9503-0BF09D912CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89DCEF51-6ABD-4A4D-9503-0BF09D912CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A15A09-4B2B-4279-9F4A-6F9FA8571752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A15A09-4B2B-4279-9F4A-6F9FA8571752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A15A09-4B2B-4279-9F4A-6F9FA8571752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A15A09-4B2B-4279-9F4A-6F9FA8571752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +91,8 @@ Global
 		{CF23F216-166A-41B7-B9C7-507BC009A470} = {184B23A2-9CB3-453C-AEF7-F91B8610766C}
 		{62BEFC84-ECB5-43DD-AA8D-FC78C0C45EAE} = {184B23A2-9CB3-453C-AEF7-F91B8610766C}
 		{89DCEF51-6ABD-4A4D-9503-0BF09D912CEA} = {3B7C10A7-B1A5-47C9-9850-C20508E9C188}
+		{7381F2C7-B023-4E47-AC8C-EE2C71C4DD05} = {3B7C10A7-B1A5-47C9-9850-C20508E9C188}
+		{D9A15A09-4B2B-4279-9F4A-6F9FA8571752} = {3B7C10A7-B1A5-47C9-9850-C20508E9C188}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {623B460E-7B4D-4024-B21C-3579E3C98FB6}
